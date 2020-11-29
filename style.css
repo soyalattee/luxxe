@@ -78,7 +78,7 @@ section {
   border-radius: 0 0 var(--size-radius) var(--size-radius);
   background-color: var(--color-menu);
   z-index: 1000;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .header.on {
   top: 0;
@@ -104,6 +104,9 @@ section {
   bottom: 0;
   background-color: var(--color-menu);
   border-radius: var(--size-radius) var(--size-radius) 0px 0px;
+}
+.menu > div {
+  cursor: pointer;
 }
 .menu > div > img {
   margin: calc(var(--size-header-height) / 3) 1.2rem;
@@ -167,11 +170,12 @@ section {
 }
 .category__btn {
   cursor: pointer;
+  font-size: var(--size-font-large);
 }
 .category__btn.active {
   color: var(--color-main);
-  transform: scale(1.2);
-  translate: 0.3s ease-in-out;
+  transform: scale(1.1);
+  translate: 0.5s ease-in-out;
 }
 
 .items {

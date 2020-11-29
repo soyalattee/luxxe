@@ -30,3 +30,13 @@ window.onscroll= function(){
 
   prevScrollpos = currentScrollpos;
 }
+
+/** 카테고리 선택 */
+const category = document.querySelector(".category__category")
+
+category.addEventListener("click",(event)=>{
+  const el = event.target;
+  const activeTarget = document.querySelector(".category__btn.active");
+  activeTarget.classList.remove("active");
+  el.classList.add("active");
+})
