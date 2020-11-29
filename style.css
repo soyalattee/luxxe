@@ -8,6 +8,7 @@
   /* 브랜드명 */
   --szie-font-small: 13px;
   --size-header-height: 82px;
+  --size-header-height-revert: -82px;
   --size-slider-height: 262px;
   --size-slider-width: 210px;
   --color-main: #80a9f7;
@@ -66,17 +67,21 @@ section {
 
 .header {
   width: 100%;
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: var(--size-header-height);
-  position: sticky;
-  top: 0;
+  top: var(--size-header-height-revert);
   padding: 0 var(--size-padding);
   border-radius: 0 0 var(--size-radius) var(--size-radius);
   background-color: var(--color-menu);
   z-index: 1000;
+  transition: 0.3s ease-in-out;
+}
+.header.on {
+  top: 0;
 }
 
 .header__menu {

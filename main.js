@@ -1,3 +1,4 @@
+/* popular 메뉴 슬라이더 */
 const slider = document.querySelector(".slider");
 const windowWidth = window.innerWidth;
 const scrollLeft = windowWidth / 2;
@@ -14,4 +15,18 @@ slider.addEventListener("scroll", () => {
 });
 function removeActive(element) {
   element.classList.remove("active");
+}
+
+/*scroll 방향으로 상단 메뉴 바 활성&비활성*/ 
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll= function(){
+  let currentScrollpos = window.pageYOffset;
+  if(prevScrollpos > currentScrollpos){
+    document.querySelector(".header").classList.add("on");
+  }else{
+    document.querySelector(".header").classList.remove("on");
+  }
+
+  prevScrollpos = currentScrollpos;
 }
