@@ -48,6 +48,10 @@ body {
   margin: 0;
 }
 
+p,
+button {
+  font-family: "Noto Sans KR", sans-serif;
+}
 .title {
   text-align: center;
   font-size: var(--size-font-title);
@@ -219,7 +223,7 @@ section {
 .item .item__like p {
   position: absolute;
   font-size: var(--szie-font-small);
-  top: 4px;
+  top: 2px;
   right: 4px;
   height: var(--size-font-large);
   color: var(--color-font-gray);
@@ -286,7 +290,8 @@ footer {
 section.collections > p {
   text-align: left;
   font-size: var(--size-font-title);
-  font-weight: 900;
+  font-weight: bold;
+  font-family: "Myriad Pro Regular";
   padding-left: var(--margin-main);
   color: var(--color-font-collection);
 }
@@ -335,8 +340,8 @@ section.collections > p {
 .collection__item__gold p {
   position: absolute;
   font-size: 12px;
-  top: 3px;
-  right: 8px;
+  top: 1px;
+  right: 6px;
   color: white;
 }
 
@@ -368,6 +373,7 @@ footer p {
 }
 footer h3 {
   margin: 12px 0;
+  font-family: "Archivo Black", sans-serif;
 }
 h4 {
   color: #646464;
