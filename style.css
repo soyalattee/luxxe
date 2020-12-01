@@ -103,7 +103,7 @@ section {
   height: var(--size-header-height);
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: centerh;
+  align-items: center;
   position: fixed;
   bottom: 0;
   background-color: var(--color-menu);
