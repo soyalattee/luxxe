@@ -1,0 +1,46 @@
+:root {
+  --margin-main: 1rem;
+  --size-icon-height: 32px;
+  --size-font-title: 21px;
+  /* 금액 */
+  --size-font-large: 17px;
+  /* 카테고리,더보기, 이름 */
+  --size-font-middle: 15px;
+  /* 브랜드명 */
+  --szie-font-small: 13px;
+  --size-header-height: 82px;
+  --size-header-height-revert: -82px;
+  --size-slider-height: 262px;
+  --size-slider-width: 210px;
+  --color-main: #80a9f7;
+  --color-banner: #a1b3f9;
+  --color-main-light: #c9d4ff;
+  --color-font: #16151a;
+  --color-font-collection: #3e3e3f;
+  --color-font-gray: #959595;
+  --color-menu: #ffffff;
+  --color-gray: #d2d2d2;
+  --size-radius: 40px;
+  --size-radius-small: 21px;
+  --size-padding: 18px;
+  --size-margin: 36px;
+  --gutter: 20px;
+  --size-item: 158px;
+  --size-more-height: 40px;
+  --size-banner: 200px;
+}
+
+.photos {
+  height: 391px;
+  border-radius: 0 0 0 var(--size-radius);
+  background-color: var(--color-main);
+}
+.close {
+  position: absolute;
+  top: 33px;
+  left: 28px;
+}
+i.fa-times {
+  color: white;
+  font-size: var(--size-font-title);
+}
