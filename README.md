@@ -22,3 +22,6 @@ Css : flex, grid 연습
 선택자 우선순위의 경우 태그는 뒷 순위를 가지고 있지만, p 태그의 경우
 클래스로 접근하는것 보다 p 태그로 접근하는것이 적용 순위가 더 높았다.
 text-align 먹일때 애먹음
+
+## link 
+https://soyalattee.github.io/luxxe/main.html
