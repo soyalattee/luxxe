@@ -13,6 +13,7 @@
   --size-slider-height: 262px;
   --size-slider-width: 210px;
   --color-main: #80a9f7;
+  --color-certificate: #89a0f7;
   --color-banner: #a1b3f9;
   --color-main-light: #c9d4ff;
   --color-font: #16151a;
@@ -33,11 +34,29 @@
 
   --color-niceseller: #e188f5;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border-style: none;
+  outline-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-black);
+  background: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
 p,
 button {
   font-family: "Noto Sans KR", sans-serif;
 }
-
 .photos {
   position: relative;
   height: 391px;
@@ -107,21 +126,124 @@ i.fa-times {
   text-align: left;
 }
 .chatbox {
+  position: relative;
   display: none;
-  z-index: 1000;
+  z-index: 4000;
+}
+.chat__close {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 24px;
+  height: 24px;
+}
+.chatbox.on {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: var(--margin-main);
+}
+.shadow {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 30%;
+  z-index: 3500;
+  transition: 1s ease-in-out;
+}
+.shadow.on {
+  display: block;
 }
 .certificate {
-  display: none;
-}
-.certificate__bar {
+  /* display: none; */
+  /* overflow: hidden; */
   position: fixed;
-  bottom: 0;
-  height: 55px;
-  background-color: var(--color-main);
   width: 100%;
-  border-radius: var(--size-radius) var(--size-radius) 0 0;
-  color: white;
+  height: 55px;
+  transition: 0.5s ease-in-out;
+  top: 93%;
+}
+.certificate.on {
+  width: 100%;
+  height: 576px;
+  display: block;
+  top: 21%;
+  z-index: 4000;
+}
+.certificate img {
+  width: 100%;
+}
+.certificate__info {
+  height: 642px;
 }
 .bar__icon {
   margin-top: 10px;
+}
+
+.chat__icon {
+  position: absolute;
+  right: 8px;
+  bottom: 60px;
+  z-index: 3000;
+}
+.line_thin {
+  border-top: solid 1px var(--color-gray);
+  margin: var(--margin-main) 4px;
+}
+.product__subject p {
+  font-weight: 600;
+  font-size: var(--size-font-title);
+}
+
+.product__brand p {
+  font-size: var(--size-font-small);
+  color: var(--color-font-gray);
+}
+.product__mark {
+  display: flex;
+}
+.mark__icon {
+  display: inline-block;
+  background-color: var(--color-main);
+  border-radius: var(--size-radius);
+  height: 22px;
+  padding: 0px 8px;
+  color: white;
+  line-height: 20px;
+  margin-top: 21px;
+  margin-right: 6px;
+}
+.mark__icon p {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.product__info {
+  display: flex;
+  padding-left: 6px;
+  margin-top: 15px;
+  align-items: center;
+}
+.product__info img {
+  margin-left: 13px;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+.product__info p {
+  display: inline-block;
+  color: var(--color-font-gray);
+  font-size: var(--size-font-small);
+}
+
+p.canhalfway {
+  font-size: 12px;
+  color: var(--color-font-gray);
+}
+
+p.price {
 }
