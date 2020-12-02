@@ -114,8 +114,14 @@ i.fa-times {
   display: none;
 }
 .certificate__bar {
+  position: fixed;
+  bottom: 0;
   height: 55px;
   background-color: var(--color-main);
   width: 100%;
   border-radius: var(--size-radius) var(--size-radius) 0 0;
+  color: white;
+}
+.bar__icon {
+  margin-top: 10px;
 }
