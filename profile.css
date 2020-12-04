@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border-style: none;
+  outline-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-black);
+  background: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.section__profile {
+  background-image: url("./img/userpage.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 375px;
+  height: 1188px;
+}
